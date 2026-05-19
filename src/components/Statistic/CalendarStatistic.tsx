@@ -41,7 +41,7 @@ export default memo(function CalendarStatistic({
       start_date: formattedDate,
       end_date: formattedDate
     })
-    if (data) {
+    if (Array.isArray(data)) {
       setStatements(data)
     }
   }
